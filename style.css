@@ -1,0 +1,326 @@
+:root {
+  --barColor: #b0b0b0;
+  --cardColor1: #ddd9d8;
+  --cardColor2: #f3f3f3;
+  --userColor: #101010;
+  --dateColor: #e7e7e7;
+  --avatarColor: #ffffff;
+  --iconsColor: #858b97;
+  --selectColor2: #b9b8b8;
+}
+
+body {
+  display: flex;
+  gap: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+p {
+  margin: 5px;
+  margin-bottom: 40px;
+}
+
+select {
+  border: 0;
+  background-color: transparent;
+  appearance: none;
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  gap: 5px;
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+nav p {
+  width: 20ch;
+}
+
+.likeComment {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.comment {
+  width: 20px;
+  height: 20px;
+}
+
+.gato {
+  height: 250px;
+  width: 100%;
+}
+
+.puntos {
+  width: 25px;
+  height: 25px;
+  display: block;
+  font-weight: 100;
+  font-size: 12px;
+  box-sizing: unset;
+  text-align: center;
+  align-self: center;
+  margin-left: 28%;
+  margin-right: 5px;
+}
+
+.contenido p {
+  padding-left: 5px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  background-color: var(--avatarColor);
+  border-radius: 50px;
+}
+
+.user {
+  color: var(--userColor);
+  margin: 0;
+  font-weight: 450;
+}
+
+.date {
+  color: var(--dateColor);
+  margin: 0;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(
+    var(--barColor),
+    var(--cardColor1),
+    var(--cardColor2)
+  );
+  border-radius: 25px;
+  box-shadow: 0px 0.2em 5px var(--barColor);
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(
+    var(--barColor),
+    var(--cardColor1),
+    var(--cardColor2)
+  );
+  border-radius: 25px;
+  box-shadow: 0px 0.2em 5px var(--barColor);
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(
+    var(--barColor),
+    var(--cardColor1),
+    var(--cardColor2)
+  );
+  border-radius: 25px;
+  box-shadow: 0px 0.2em 5px var(--barColor);
+}
+
+/* TABLET VIEW */
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    gap: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+
+  p {
+    margin: 5px;
+    margin-bottom: 40px;
+  }
+
+  select {
+    border: 0;
+    background-color: transparent;
+    appearance: none;
+  }
+
+  nav {
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    padding-top: 5px;
+    padding-left: 8px;
+    flex-direction: row;
+  }
+
+  nav p {
+    width: 20ch;
+  }
+
+  .likeComment {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .comment {
+    width: 20px;
+    height: 20px;
+  }
+
+  .gato {
+    height: 250px;
+    width: 100%;
+  }
+
+  .puntos {
+    width: 25px;
+    height: 25px;
+    display: block;
+    font-weight: 100;
+    font-size: 12px;
+    box-sizing: unset;
+    text-align: center;
+    align-self: center;
+    margin-left: 16.2%;
+    margin-right: 15px;
+  }
+
+  .contenido p {
+    padding-left: 5px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .avatar {
+    margin-top: 2px;
+  }
+
+  .user {
+    font-weight: 530;
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .card1 {
+    width: 40%;
+    height: 100%;
+  }
+
+  .card2 {
+    width: 40%;
+    height: 100%;
+  }
+
+  .card3 {
+    width: 40%;
+    height: 100%;
+} 
+
+
+/* PHONE VIEW*/
+
+@media screen and (max-width: 375px) {
+  body {
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 2%;
+  }
+
+  p {
+    margin: 2px;
+    margin-bottom: 40px;
+  }
+
+  nav {
+    height: 50px;
+    gap: 5px;
+    padding-top: 3px;
+    padding-left: 4px;
+    padding-bottom: 3px;
+    align-items: center;
+  }
+
+  nav p {
+    width: 100%;
+  }
+
+  .puntos {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    margin-left: 45%;
+    margin-right: 5px;
+  }
+
+  .contenido p {
+    padding-left: 5px;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+
+  .avatar {
+    margin-top: 2px;
+  }
+
+  .user {
+    font-weight: 550;
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .gato {
+    width: 100%;
+    height: 250px;
+  }
+
+  .likeComment {
+    padding-top: 20px;
+    padding-left: 14px;
+    padding-bottom: 4px;
+    width: 45px;
+    gap: 8px;
+  }
+
+  .card1 {
+    width: 90%;
+  }
+
+  .card2 {
+    width: 90%;
+  }
+
+  .card3 {
+    width: 90%;
+  }
+}
+
+}
